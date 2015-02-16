@@ -7,13 +7,14 @@ public class ExceptionTest {
 			test1();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+//			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 		test2();
 		test3();
 	}
 	
-	//只有Exception是需要强制捕捉和处理的
+	//å�ªæœ‰Exceptionæ˜¯éœ€è¦�å¼ºåˆ¶æ�•æ�‰å’Œå¤„ç�†çš„
 	private static void test1() throws Exception{
 		throw new Exception();
 	}
